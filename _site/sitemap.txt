@@ -1,0 +1,9 @@
+
+http://ilingaohe.github.com/archive.html
+http://ilingaohe.github.com/atom.xml
+http://ilingaohe.github.com/categories.html
+http://ilingaohe.github.com/index.html
+http://ilingaohe.github.com/sitemap.txt
+http://ilingaohe.github.com/tags.html
+
+http://ilingaohe.github.com/first-blog

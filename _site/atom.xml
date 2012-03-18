@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>ilingaohe</title>
+ <link href="http://ilingaohe.github.com/atom.xml" rel="self"/>
+ <link href="http://ilingaohe.github.com"/>
+ <updated>2012-03-18T22:59:59+08:00</updated>
+ <id>http://ilingaohe.github.com</id>
+ <author>
+   <name>lin gaohe</name>
+   <email>ilingaohe@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>博客开篇</title>
+   <link href="http://ilingaohe.github.com/first-blog"/>
+   <updated>2012-03-18T00:00:00+08:00</updated>
+   <id>hhttp://ilingaohe.github.com/first-blog</id>
+   <content type="html">&lt;h2 id='id15'&gt;博客开言&lt;/h2&gt;
+
+&lt;p&gt;我是一只菜菜菜鸟，正在努力起起起飞！&lt;/p&gt;
+
+&lt;h2 id='id16'&gt;博客目的&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1. 总结学习笔记&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;2. 记录工作经验&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;3. 扯淡生活感悟&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='lets_go'&gt;Let&amp;#8217;s Go!&lt;/h2&gt;</content>
+ </entry>
+ 
+ 
+</feed>
