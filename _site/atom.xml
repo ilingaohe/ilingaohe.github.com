@@ -4,7 +4,7 @@
  <title>ilingaohe</title>
  <link href="http://ilingaohe.github.com/atom.xml" rel="self"/>
  <link href="http://ilingaohe.github.com"/>
- <updated>2012-03-18T22:59:59+08:00</updated>
+ <updated>2012-03-19T17:03:11+08:00</updated>
  <id>http://ilingaohe.github.com</id>
  <author>
    <name>lin gaohe</name>
@@ -13,15 +13,371 @@
 
  
  <entry>
+   <title>学习Markdown</title>
+   <link href="http://ilingaohe.github.com/learn-markdown"/>
+   <updated>2012-03-19T00:00:00+08:00</updated>
+   <id>hhttp://ilingaohe.github.com/learn-markdown</id>
+   <content type="html">&lt;h2 id='id1325'&gt;学习目的&lt;/h2&gt;
+
+&lt;p&gt;markdown语法使用的学习与提高&lt;/p&gt;
+
+&lt;h2 id='id1326'&gt;学习工具&lt;/h2&gt;
+
+&lt;p&gt;markdown是纯文本，所以可以使用任何的文本编辑器，不过为了提高编辑的效率，建议使用一款markdwon的编辑器，Mac OS X下我使用的是&lt;a href='http://mouapp.com/'&gt;Mou&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://mouapp.com/images/Mou_Screenshot_1.png' alt='Mou_Screenshot' /&gt;&lt;/p&gt;
+
+&lt;h2 id='id1327'&gt;语法学习&lt;/h2&gt;
+
+&lt;p&gt;以下内容，主要根据Mou的帮助文档整理，以后根据实际用到的经验，陆续添加更新。&lt;/p&gt;
+
+&lt;h3 id='id1328'&gt;强调&lt;/h3&gt;
+
+&lt;p&gt;使用两个&lt;code&gt;**&lt;/code&gt;或者两个&lt;code&gt;__&lt;/code&gt;包围内容表示加粗强调 使用一个&lt;code&gt;*&lt;/code&gt;或者一个&lt;code&gt;_&lt;/code&gt;包围内容表示倾斜强调&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;**加粗强调**
+
+__倾斜强调__
+
+**
+也可以嵌套使用，比如整个加粗，
+并且里面的_内容_这两个字进行倾斜
+**&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1329'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;加粗强调&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;倾斜强调&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;也可以嵌套使用，比如整个加粗， 并且里面的_内容_这两个字进行倾斜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id='id1330'&gt;块引用&lt;/h3&gt;
+
+&lt;p&gt;内容以右角尖括号&amp;gt;开始的话则显示的是进行整块的引用&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;内容以右角尖括号&amp;gt;开始的话则显示的是进行整块的引用&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1331'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;内容以右角尖括号&amp;gt;开始的话则显示的是进行整块的引用&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id='id1332'&gt;链接与邮箱&lt;/h3&gt;
+
+&lt;p&gt;邮箱只要用&lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;括起来就可以&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;ilingaohe@gmail.com&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1333'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href='mailto:ilingaohe@gmail.com'&gt;&amp;#105;&amp;#108;&amp;#105;&amp;#110;&amp;#103;&amp;#097;&amp;#111;&amp;#104;&amp;#101;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;链接有4种方式：&lt;/p&gt;
+
+&lt;p&gt;1.直接使用&lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;括起来即可&lt;/p&gt;
+
+&lt;p&gt;2.使用&lt;code&gt;[链接文字](链接地址)&lt;/code&gt;的方式&lt;/p&gt;
+
+&lt;p&gt;3.使用&lt;code&gt;[链接文字](链接地址 &amp;quot;链接说明文字&amp;quot;)&lt;/code&gt;的方式&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用&lt;code&gt;[链接文字][链接id]&lt;/code&gt;，而&lt;code&gt;链接id&lt;/code&gt;可以在文章的任何地方给出，形式为&lt;code&gt;[链接id]:链接地址 &amp;quot;链接说明文字&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;1.&amp;lt;http://ilingaohe.github.com&amp;gt;
+2.[我的博客](http://ilingaohe.github.com)
+3.[我的博客](http://ilingaohe.github.com &amp;quot;ilingaohe的博客&amp;quot;)
+4.[我的博客][id]
+  [id]:http://ilingaohe.github.com &amp;quot;ilingaohe的博客&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1334'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://ilingaohe.github.com'&gt;http://ilingaohe.github.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://ilingaohe.github.com'&gt;我的博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://ilingaohe.github.com' title='ilingaohe的博客'&gt;我的博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://ilingaohe.github.com' title='ilingaohe的博客'&gt;我的博客&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id='id1335'&gt;图片添加&lt;/h3&gt;
+
+&lt;p&gt;和文字链接类似，图片添加也有两种方式:&lt;/p&gt;
+
+&lt;p&gt;1.使用&lt;code&gt;![图片名字](图片链接地址 &amp;quot;图片标题文字&amp;quot;)&lt;/code&gt;的方式,标题文字可选&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;使用&lt;code&gt;![图片名字][链接id]&lt;/code&gt;的方式，而&lt;code&gt;链接id&lt;/code&gt;和上面提到过的使用方式一样，可以在文章的任何地方给出，形式为&lt;code&gt;[链接id]:链接地址 &amp;quot;链接说明文字&amp;quot;&lt;/code&gt;，链接说明文字可选&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;1.![Mou icon](http://mouapp.com/Mou_128.png)
+2.![Mou icon][id_2]
+   [id_2]: http://mouapp.com/Mou_128.png &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1336'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;img src='http://mouapp.com/Mou_128.png' alt='Mou icon' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;img src='http://mouapp.com/Mou_128.png' alt='Mou icon' /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id='id1337'&gt;行内代码及代码块&lt;/h3&gt;
+
+&lt;p&gt;行内代码标注和代码块前面我们已经有用到了，行内代码的话用&lt;code&gt;(Esc按键下面那个)符号包围，代码块的话每行使用1个Tab或者4个空格。&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;行内代码的例子，`NSString *name = @&amp;quot;ilingaohe&amp;quot;;`
+
+//代码块的例子
+NSString *name = @&amp;quot;ilingaohe&amp;quot;;
+NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1338'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;行内代码的例子，&lt;code&gt;NSString *name = @&amp;quot;ilingaohe&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;代码块的例子：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//代码块的例子
+NSString *name = @&amp;quot;ilingaohe&amp;quot;;
+NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id='id1339'&gt;列表&lt;/h3&gt;
+
+&lt;p&gt;有序列表使用类似&amp;#8221;1.&amp;#8221;+空格的方式 无序列表使用类似&amp;#8221;&lt;em&gt;&amp;#8220;或者&amp;#8221;-&amp;#8220;+空格的方式&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;有序列表
+1. 第一条
+2. 第二条
+3. 第三条 
+
+无序列表
+* Java
+* C
+* Objectiv-C
+
+- C++
+- Ruby
+- Javascript &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1340'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;有序列表&lt;/p&gt;
+
+&lt;p&gt;1. 第一条 2. 第二条 3. 第三条&lt;/p&gt;
+
+&lt;p&gt;无序列表&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Java&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;C&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Objectiv-C&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;C++&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Ruby&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Javascript&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='id1341'&gt;换行&lt;/h3&gt;
+
+&lt;p&gt;在一行的结尾添加大于等于两个的空格才可以实际换行&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;第一行（后面还添加了两个空格）  
+第二行&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1342'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;第一行（后面还添加了两个空格）&lt;br /&gt;第二行&lt;/p&gt;
+
+&lt;h3 id='id1343'&gt;水平线&lt;/h3&gt;
+
+&lt;p&gt;使用3个及以上的星号及虚线能够产生一条水平线&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;***  
+---  
+- - - &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1344'&gt;实际显示效果&lt;/h4&gt;
+&lt;hr /&gt;&lt;hr /&gt;&lt;hr /&gt;
+&lt;h3 id='id1345'&gt;标题&lt;/h3&gt;
+
+&lt;p&gt;标题有两种类型风格，Setext风格和atx风格&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;//Setext风格
+标题1  
+=====  
+标题2  
+-----
+
+//atx风格
+#标题1  
+##标题2  
+###标题3  
+####标题4 
+#####标题5  
+######标题6 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1346'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;//Setext风格&lt;/p&gt;
+
+&lt;h1 id='1'&gt;标题1&lt;/h1&gt;
+
+&lt;h2 id='2'&gt;标题2&lt;/h2&gt;
+
+&lt;p&gt;//atx风格&lt;/p&gt;
+
+&lt;h1 id='1'&gt;标题1&lt;/h1&gt;
+
+&lt;h2 id='2'&gt;标题2&lt;/h2&gt;
+
+&lt;h3 id='3'&gt;标题3&lt;/h3&gt;
+
+&lt;h4 id='4'&gt;标题4&lt;/h4&gt;
+
+&lt;h5 id='5'&gt;标题5&lt;/h5&gt;
+
+&lt;h6 id='6'&gt;标题6&lt;/h6&gt;
+
+&lt;h3 id='id1347'&gt;错误更正&lt;/h3&gt;
+
+&lt;p&gt;使用两个&lt;code&gt;~~&lt;/code&gt;(都是Esc下面的按键)波浪号可以显示错误更正的效果&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;~~错误内容~~&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1348'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;~~错误内容~~&lt;/p&gt;
+
+&lt;h3 id='id1349'&gt;包围代码快&lt;/h3&gt;
+
+&lt;p&gt;以三个及以上的反引号&lt;code&gt; &lt;/code&gt;&lt;code&gt; &lt;/code&gt;（还是Esc下面的按键）开始一行，并且在结尾的时候使用和开头一样多的反引号作为结尾行，可以包围一个代码块&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;```
+代码块开始部分
+代码块正文部分
+代码块结尾部分
+```&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1350'&gt;实际显示效果&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt; 
+代码块开始部分  
+代码块正文部分  
+代码块结尾部分    
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id='id1351'&gt;表格&lt;/h3&gt;
+
+&lt;p&gt;表格使用虚线进行划分，并且可以使用冒号&lt;code&gt;:&lt;/code&gt;进行表格内容的对齐&lt;/p&gt;
+
+&lt;h4 id='markdown'&gt;Markdown写法&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;//
+First Header | Second Header | Third Header
+------------ | ------------- | ------------
+Content Cell | Content Cell  | Content Cell
+Content Cell | Content Cell  | Content Cell
+
+//也可以在两边再添加虚线
+| First Header | Second Header | Third Header |
+| ------------ | ------------- | ------------ |
+| Content Cell | Content Cell  | Content Cell |
+| Content Cell | Content Cell  | Content Cell |
+
+//使用:号进行表格内容的对齐
+First Header | Second Header | Third Header
+:----------- | :-----------: | -----------:
+Left         | Center        | Right
+Left         | Center        | Right&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id1352'&gt;实际显示效果&lt;/h4&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;First Header&lt;/th&gt;&lt;th&gt;Second Header&lt;/th&gt;&lt;th&gt;Third Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;First Header&lt;/th&gt;&lt;th&gt;Second Header&lt;/th&gt;&lt;th&gt;Third Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;First Header&lt;/th&gt;&lt;th&gt;Second Header&lt;/th&gt;&lt;th&gt;Third Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Left&lt;/td&gt;&lt;td style='text-align: center;'&gt;Center&lt;/td&gt;&lt;td style='text-align: right;'&gt;Right&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Left&lt;/td&gt;&lt;td style='text-align: center;'&gt;Center&lt;/td&gt;&lt;td style='text-align: right;'&gt;Right&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id='id1353'&gt;其他资料&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href='http://wowubuntu.com/markdown/'&gt;Markdown 语法说明 (简体中文版)&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.ituring.com.cn/article/775'&gt;Markdown语法&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://sebug.net/node/t-24'&gt;Markdown语法简单介绍&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://blog.ouyang.me/2011/06/markdown语法/'&gt;MarkDown语法&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>博客开篇</title>
    <link href="http://ilingaohe.github.com/first-blog"/>
    <updated>2012-03-18T00:00:00+08:00</updated>
    <id>hhttp://ilingaohe.github.com/first-blog</id>
-   <content type="html">&lt;h2 id='id15'&gt;博客开言&lt;/h2&gt;
+   <content type="html">&lt;h2 id='id1323'&gt;博客开言&lt;/h2&gt;
 
 &lt;p&gt;我是一只菜菜菜鸟，正在努力起起起飞！&lt;/p&gt;
 
-&lt;h2 id='id16'&gt;博客目的&lt;/h2&gt;
+&lt;h2 id='id1324'&gt;博客目的&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;

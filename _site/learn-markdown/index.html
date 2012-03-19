@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>学习Markdown</title>
+    
+    <meta name="author" content="lin gaohe">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">ilingaohe</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+    	
+    	<li><a href="/archive.html">Archive</a></li>
+    	
+    
+  
+    
+  
+    
+    	
+    	<li><a href="/categories.html">Categories</a></li>
+    	
+    
+  
+    
+  
+    
+  
+    
+    	
+    	<li><a href="/tags.html">Tags</a></li>
+    	
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <!--<h1>学习Markdown <small>Supporting tagline</small></h1>-->
+  <h1>学习Markdown</h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h2 id='id1325'>学习目的</h2>
+
+<p>markdown语法使用的学习与提高</p>
+
+<h2 id='id1326'>学习工具</h2>
+
+<p>markdown是纯文本，所以可以使用任何的文本编辑器，不过为了提高编辑的效率，建议使用一款markdwon的编辑器，Mac OS X下我使用的是<a href='http://mouapp.com/'>Mou</a></p>
+
+<p><img src='http://mouapp.com/images/Mou_Screenshot_1.png' alt='Mou_Screenshot' /></p>
+
+<h2 id='id1327'>语法学习</h2>
+
+<p>以下内容，主要根据Mou的帮助文档整理，以后根据实际用到的经验，陆续添加更新。</p>
+
+<h3 id='id1328'>强调</h3>
+
+<p>使用两个<code>**</code>或者两个<code>__</code>包围内容表示加粗强调 使用一个<code>*</code>或者一个<code>_</code>包围内容表示倾斜强调</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>**加粗强调**
+
+__倾斜强调__
+
+**
+也可以嵌套使用，比如整个加粗，
+并且里面的_内容_这两个字进行倾斜
+**</code></pre>
+
+<h4 id='id1329'>实际显示效果</h4>
+
+<p><strong>加粗强调</strong></p>
+
+<p><strong>倾斜强调</strong></p>
+
+<p><strong>也可以嵌套使用，比如整个加粗， 并且里面的_内容_这两个字进行倾斜</strong></p>
+
+<h3 id='id1330'>块引用</h3>
+
+<p>内容以右角尖括号&gt;开始的话则显示的是进行整块的引用</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>内容以右角尖括号&gt;开始的话则显示的是进行整块的引用</code></pre>
+
+<h4 id='id1331'>实际显示效果</h4>
+
+<blockquote>
+<p>内容以右角尖括号&gt;开始的话则显示的是进行整块的引用</p>
+</blockquote>
+
+<h3 id='id1332'>链接与邮箱</h3>
+
+<p>邮箱只要用<code>&lt;&gt;</code>括起来就可以</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>&lt;ilingaohe@gmail.com&gt;</code></pre>
+
+<h4 id='id1333'>实际显示效果</h4>
+
+<p><a href='mailto:ilingaohe@gmail.com'>&#105;&#108;&#105;&#110;&#103;&#097;&#111;&#104;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+
+<p>链接有4种方式：</p>
+
+<p>1.直接使用<code>&lt;&gt;</code>括起来即可</p>
+
+<p>2.使用<code>[链接文字](链接地址)</code>的方式</p>
+
+<p>3.使用<code>[链接文字](链接地址 &quot;链接说明文字&quot;)</code>的方式</p>
+
+<ol>
+<li>使用<code>[链接文字][链接id]</code>，而<code>链接id</code>可以在文章的任何地方给出，形式为<code>[链接id]:链接地址 &quot;链接说明文字&quot;</code></li>
+</ol>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>1.&lt;http://ilingaohe.github.com&gt;
+2.[我的博客](http://ilingaohe.github.com)
+3.[我的博客](http://ilingaohe.github.com &quot;ilingaohe的博客&quot;)
+4.[我的博客][id]
+  [id]:http://ilingaohe.github.com &quot;ilingaohe的博客&quot;</code></pre>
+
+<h4 id='id1334'>实际显示效果</h4>
+
+<ol>
+<li>
+<p><a href='http://ilingaohe.github.com'>http://ilingaohe.github.com</a></p>
+</li>
+
+<li>
+<p><a href='http://ilingaohe.github.com'>我的博客</a></p>
+</li>
+
+<li>
+<p><a href='http://ilingaohe.github.com' title='ilingaohe的博客'>我的博客</a></p>
+</li>
+
+<li>
+<p><a href='http://ilingaohe.github.com' title='ilingaohe的博客'>我的博客</a></p>
+</li>
+</ol>
+
+<h3 id='id1335'>图片添加</h3>
+
+<p>和文字链接类似，图片添加也有两种方式:</p>
+
+<p>1.使用<code>![图片名字](图片链接地址 &quot;图片标题文字&quot;)</code>的方式,标题文字可选</p>
+
+<ol>
+<li>使用<code>![图片名字][链接id]</code>的方式，而<code>链接id</code>和上面提到过的使用方式一样，可以在文章的任何地方给出，形式为<code>[链接id]:链接地址 &quot;链接说明文字&quot;</code>，链接说明文字可选</li>
+</ol>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>1.![Mou icon](http://mouapp.com/Mou_128.png)
+2.![Mou icon][id_2]
+   [id_2]: http://mouapp.com/Mou_128.png </code></pre>
+
+<h4 id='id1336'>实际显示效果</h4>
+
+<ol>
+<li>
+<p><img src='http://mouapp.com/Mou_128.png' alt='Mou icon' /></p>
+</li>
+
+<li>
+<p><img src='http://mouapp.com/Mou_128.png' alt='Mou icon' /></p>
+</li>
+</ol>
+
+<h3 id='id1337'>行内代码及代码块</h3>
+
+<p>行内代码标注和代码块前面我们已经有用到了，行内代码的话用<code>(Esc按键下面那个)符号包围，代码块的话每行使用1个Tab或者4个空格。</code></p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>行内代码的例子，`NSString *name = @&quot;ilingaohe&quot;;`
+
+//代码块的例子
+NSString *name = @&quot;ilingaohe&quot;;
+NSLog(@&quot;Name:%@&quot;,name);</code></pre>
+
+<h4 id='id1338'>实际显示效果</h4>
+
+<p>行内代码的例子，<code>NSString *name = @&quot;ilingaohe&quot;;</code></p>
+
+<p>代码块的例子：</p>
+
+<pre><code>//代码块的例子
+NSString *name = @&quot;ilingaohe&quot;;
+NSLog(@&quot;Name:%@&quot;,name);</code></pre>
+
+<h3 id='id1339'>列表</h3>
+
+<p>有序列表使用类似&#8221;1.&#8221;+空格的方式 无序列表使用类似&#8221;<em>&#8220;或者&#8221;-&#8220;+空格的方式</em></p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>有序列表
+1. 第一条
+2. 第二条
+3. 第三条 
+
+无序列表
+* Java
+* C
+* Objectiv-C
+
+- C++
+- Ruby
+- Javascript </code></pre>
+
+<h4 id='id1340'>实际显示效果</h4>
+
+<p>有序列表</p>
+
+<p>1. 第一条 2. 第二条 3. 第三条</p>
+
+<p>无序列表</p>
+
+<ul>
+<li>
+<p>Java</p>
+</li>
+
+<li>
+<p>C</p>
+</li>
+
+<li>
+<p>Objectiv-C</p>
+</li>
+
+<li>
+<p>C++</p>
+</li>
+
+<li>
+<p>Ruby</p>
+</li>
+
+<li>
+<p>Javascript</p>
+</li>
+</ul>
+
+<h3 id='id1341'>换行</h3>
+
+<p>在一行的结尾添加大于等于两个的空格才可以实际换行</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>第一行（后面还添加了两个空格）  
+第二行</code></pre>
+
+<h4 id='id1342'>实际显示效果</h4>
+
+<p>第一行（后面还添加了两个空格）<br />第二行</p>
+
+<h3 id='id1343'>水平线</h3>
+
+<p>使用3个及以上的星号及虚线能够产生一条水平线</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>***  
+---  
+- - - </code></pre>
+
+<h4 id='id1344'>实际显示效果</h4>
+<hr /><hr /><hr />
+<h3 id='id1345'>标题</h3>
+
+<p>标题有两种类型风格，Setext风格和atx风格</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>//Setext风格
+标题1  
+=====  
+标题2  
+-----
+
+//atx风格
+#标题1  
+##标题2  
+###标题3  
+####标题4 
+#####标题5  
+######标题6 </code></pre>
+
+<h4 id='id1346'>实际显示效果</h4>
+
+<p>//Setext风格</p>
+
+<h1 id='1'>标题1</h1>
+
+<h2 id='2'>标题2</h2>
+
+<p>//atx风格</p>
+
+<h1 id='1'>标题1</h1>
+
+<h2 id='2'>标题2</h2>
+
+<h3 id='3'>标题3</h3>
+
+<h4 id='4'>标题4</h4>
+
+<h5 id='5'>标题5</h5>
+
+<h6 id='6'>标题6</h6>
+
+<h3 id='id1347'>错误更正</h3>
+
+<p>使用两个<code>~~</code>(都是Esc下面的按键)波浪号可以显示错误更正的效果</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>~~错误内容~~</code></pre>
+
+<h4 id='id1348'>实际显示效果</h4>
+
+<p>~~错误内容~~</p>
+
+<h3 id='id1349'>包围代码快</h3>
+
+<p>以三个及以上的反引号<code> </code><code> </code>（还是Esc下面的按键）开始一行，并且在结尾的时候使用和开头一样多的反引号作为结尾行，可以包围一个代码块</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>```
+代码块开始部分
+代码块正文部分
+代码块结尾部分
+```</code></pre>
+
+<h4 id='id1350'>实际显示效果</h4>
+
+<p><code> 
+代码块开始部分  
+代码块正文部分  
+代码块结尾部分    
+</code></p>
+
+<h3 id='id1351'>表格</h3>
+
+<p>表格使用虚线进行划分，并且可以使用冒号<code>:</code>进行表格内容的对齐</p>
+
+<h4 id='markdown'>Markdown写法</h4>
+
+<pre><code>//
+First Header | Second Header | Third Header
+------------ | ------------- | ------------
+Content Cell | Content Cell  | Content Cell
+Content Cell | Content Cell  | Content Cell
+
+//也可以在两边再添加虚线
+| First Header | Second Header | Third Header |
+| ------------ | ------------- | ------------ |
+| Content Cell | Content Cell  | Content Cell |
+| Content Cell | Content Cell  | Content Cell |
+
+//使用:号进行表格内容的对齐
+First Header | Second Header | Third Header
+:----------- | :-----------: | -----------:
+Left         | Center        | Right
+Left         | Center        | Right</code></pre>
+
+<h4 id='id1352'>实际显示效果</h4>
+<table><thead><tr><th>First Header</th><th>Second Header</th><th>Third Header</th></tr></thead><tbody><tr><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td>
+</tr><tr><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td>
+</tr></tbody></table><table><thead><tr><th>First Header</th><th>Second Header</th><th>Third Header</th></tr></thead><tbody><tr><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td>
+</tr><tr><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td><td style='text-align: left;'>Content Cell</td>
+</tr></tbody></table><table><thead><tr><th>First Header</th><th>Second Header</th><th>Third Header</th></tr></thead><tbody><tr><td style='text-align: left;'>Left</td><td style='text-align: center;'>Center</td><td style='text-align: right;'>Right</td>
+</tr><tr><td style='text-align: left;'>Left</td><td style='text-align: center;'>Center</td><td style='text-align: right;'>Right</td>
+</tr></tbody></table>
+<h2 id='id1353'>其他资料</h2>
+
+<ol>
+<li><a href='http://wowubuntu.com/markdown/'>Markdown 语法说明 (简体中文版)</a></li>
+
+<li><a href='http://www.ituring.com.cn/article/775'>Markdown语法</a></li>
+
+<li><a href='http://sebug.net/node/t-24'>Markdown语法简单介绍</a></li>
+
+<li><a href='http://blog.ouyang.me/2011/06/markdown语法/'>MarkDown语法</a></li>
+</ol>
+    <h4>----------------------</h4>
+    <div class="date"><span>19 March 2012</span></div>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/first-blog" title="博客开篇">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <!--<h4>Published</h4>
+    <div class="date"><span>19 March 2012</span></div>-->
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#markdown-ref">markdown <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; lin gaohe 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
