@@ -4,7 +4,7 @@
  <title>ilingaohe</title>
  <link href="http://ilingaohe.github.com/atom.xml" rel="self"/>
  <link href="http://ilingaohe.github.com"/>
- <updated>2012-03-19T17:03:11+08:00</updated>
+ <updated>2012-03-24T08:45:41+08:00</updated>
  <id>http://ilingaohe.github.com</id>
  <author>
    <name>lin gaohe</name>
@@ -13,25 +13,320 @@
 
  
  <entry>
+   <title>苹果iOS范例代码集锦</title>
+   <link href="http://ilingaohe.github.com/apple-ios-sample-code-collection"/>
+   <updated>2012-03-23T00:00:00+08:00</updated>
+   <id>hhttp://ilingaohe.github.com/apple-ios-sample-code-collection</id>
+   <content type="html">&lt;h2 id='id362'&gt;学习目的&lt;/h2&gt;
+
+&lt;p&gt;苹果官方提供了一系列非常优秀的iOS代码范例，这里做一个整理和集锦。&lt;/p&gt;
+
+&lt;h2 id='id363'&gt;具体例子&lt;/h2&gt;
+
+&lt;h4 id='abuigroups'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/ABUIGroups/Introduction/Intro.html#//apple_ref/doc/uid/DTS40011307'&gt;ABUIGroups&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;ABUIGroups demonstrates how to retrieve, add, and remove group records from the address book database using AddressBook APIs. It displays groups organized by their source in the address book.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='accelerometergraph'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AccelerometerGraph/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007410'&gt;AccelerometerGraph&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;AccelerometerGraph sample application graphs the motion of the device. It demonstrates how to use the UIAccelerometer class and how to use Quartz2D and Core Animation to provide a high performance graph view. It also demonstrates a low-pass filter that you can use to isolate the effects of gravity, and a high-pass filter that you can use to remove the effects of gravity.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='accessory'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/Accessory/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008066'&gt;Accessory&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates how to implement a custom accessory view for your UITableView in the form of a checkmark button. It shows you how to override the appearance or control of the accessory view, much like that of &amp;#8220;UITableViewCellAccessoryDetailDisclosureButton&amp;#8221;. It implements the custom accessory view by setting the table&amp;#8217;s &amp;#8220;accessoryView&amp;#8221; property with a UIButton of type &amp;#8220;UIButtonTypeCustom&amp;#8221;. It can be toggled by selecting the entire table row by implementing UITableView&amp;#8217;s &amp;#8220;didSelectRowAtIndexPath&amp;#8221;. The green checkmark is trackable (checked/unchecked), and can be toggled independent of table selection.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='addmusic'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AddMusic/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008845'&gt;AddMusic&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;AddMusic demonstrates basic use of iPod library access, part of the Media Player framework. You use iPod library access to play songs, audio books, and audio podcasts that are synced from a user&amp;#8217;s desktop iTunes library. This sample uses the Media Player framework&amp;#8217;s built-in user interface for choosing music.&lt;br /&gt;AddMusic also demonstrates how to mix application audio with iPod library audio. The sample includes code for configuring application audio behavior using the AVAudioSession class and Audio Session Services.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='advancedtableviewcells'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AdvancedTableViewCells/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009111'&gt;AdvancedTableViewCells&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;AdvancedTableViewCells includes three different cells that all display content in the same form as the App Store application. One uses individual subviews (image views, labels, etc.) to display the content. Another uses a single view that draws all of the content. A third uses a single view to draw most of the content and separate views for the remainder.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='advancedurlconnections'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AdvancedURLConnections/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009558'&gt;AdvancedURLConnections&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample demonstrates various advanced networking techniques with NSURLConnection. Specifically, it demonstrates how to respond to authentication challenges, how to modify the default server trust evaluation (for example, to support a server with a self-signed certificate), and how to provide client identities.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='alternateviews'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AlternateViews/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008755'&gt;AlternateViews&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates how to implement alternate or distinguishing view controllers for each particular device orientation. Through the help of the following UIViewController properties, this can be easily achieved -&lt;/p&gt;
+
+&lt;p&gt;This sample implements a two different view controllers one for portrait and one for landscape. The portrait view controller listens for device orientations in order to properly swap in and out the landscape view controller. It uses the above two properties to achieve the visual cross-fade effect.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='appprefs'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AppPrefs/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007799'&gt;AppPrefs&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates how to display your app&amp;#8217;s preferences or settings in the &amp;#8220;Settings&amp;#8221; system application. A settings bundle, included in your application’s bundle directory, contains the information needed by the Settings application to display your preferences and make it possible for the user to modify them. It then saves any configured values in the defaults database so that your application can retrieve them at runtime.&lt;/p&gt;
+
+&lt;p&gt;This sample also shows how to dynamically update it&amp;#8217;s UI when its settings are changed while the app is in the background via &amp;#8220;NSUserDefaultsDidChangeNotification&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;This sample offers an Xcode project already pre-configured to build your Settings bundle as a target. To customize your settings UI, change the Root.plist file.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='aqofflinerendertest'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AQOfflineRenderTest/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008413'&gt;AQOfflineRenderTest&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates using Audio Queue offline render functionality and the AudioQueueOfflineRender API. The sample produces LPCM output buffers from an ALAC encoded source which are then written to a .caf file. The output.caf file is then played back confirming the offline functionality worked as expected. All the code demonstrating the Audio Queue is in a single file called aqofflinerender.cpp.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='audio_mixer_mixerhost'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/MixerHost/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010210'&gt;Audio Mixer (MixerHost)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;MixerHost demonstrates how to use the Multichannel Mixer audio unit in an iOS application. It also demonstrates how to use a render callback function to provide audio to an audio unit input bus. In this sample, the audio delivered by the callback comes from two short loops read from disk. You could use a similar callback, however, to synthesize sounds to feed into a mixer unit. This sample is described in Audio Unit Hosting Guide for iOS.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='audio_ui_sounds_syssound'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/SysSound/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008018'&gt;Audio UI Sounds (SysSound)&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates use of System Sound Services (AudioToolbox/AudioServices.h) to play alerts and user-interface sound effects, and to invoke vibration.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='auriotouch'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/aurioTouch/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007770'&gt;aurioTouch&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;aurioTouch demonstrates use of the remote i/o audio unit for handling audio input and output. The application can display the input audio in one of the forms, a regular time domain waveform, a frequency domain waveform (computed by performing a fast fourier transform on the incoming signal), and a sonogram view (a view displaying the frequency content of a signal over time, with the color signaling relative power, the y axis being frequency and the x as time).&lt;/p&gt;
+
+&lt;p&gt;The code in auriouTouch uses the remote i/o audio unit (AURemoteIO) for input and output of audio, and OpenGL for display of the input waveform. The application also uses Audio Session Services to manage route changes (as described in Core Audio Overview).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='auriotouch2'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/aurioTouch2/Introduction/Intro.html#//apple_ref/doc/uid/DTS40011369'&gt;aurioTouch2&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;aurioTouch2 demonstrates use of the remote i/o audio unit (AURemoteIO) for handling audio input and output. The application can display the input audio in one of the forms, a regular time domain waveform, a frequency domain waveform (computed by performing a fast fourier transform on the incoming signal), and a sonogram view (a view displaying the frequency content of a signal over time, with the color signaling relative power, the y axis being frequency and the x as time).&lt;/p&gt;
+
+&lt;p&gt;The code in aurioTouch2 uses the remote i/o audio unit (AURemoteIO) for input and output of audio, and OpenGL for display of the input waveform. The application also uses Audio Session Services to manage route changes (as described in Core Audio Overview).&lt;/p&gt;
+
+&lt;p&gt;aurioTouch2 supports iOS 5 or later.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='avcam'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AVCam/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010112'&gt;AVCam&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;AVCam demonstrates how to use the AV Foundation capture APIs for recording movies and taking still images. There is a record button for recording movies, a camera button for switching between front and back cameras (on supported devices), and a still button for taking still images.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='avmovieexporter'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AVMovieExporter/Introduction/Intro.html#//apple_ref/doc/uid/DTS40011364'&gt;AVMovieExporter&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This universal sample application reads movie files from the Asset Library and Media Library then exports them to a new media file using user defined settings. The user can adjust the exported file in the following ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Export presets can be chosen which influence the size and quality of the output.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;The file type can be changed.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Tracks and existing metadata can be inspected.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Metadata can be replaced or deleted.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h4 id='avplayerdemo'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/AVPlayerDemo/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010101'&gt;AVPlayerDemo&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Uses AVPlayer to play videos from the iPod Library, Camera Roll, or via iTunes File Sharing. Also displays metadata.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='avtouch'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/avTouch/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008636'&gt;avTouch&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The avTouch sample demonstrates use of the AVAudioPlayer class for basic audio playback.&lt;/p&gt;
+
+&lt;p&gt;The code in avTouch uses the AV Foundation framework to play a file containing AAC audio data. The application uses Core Graphics and OpenGL to display sound volume meters during playback.&lt;/p&gt;
+
+&lt;p&gt;This application shows how to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create an AVAudioPlayer object from an input audio file.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Use OpenGL and Core Graphics to display metering levels.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Use Audio Session Services to set an appropriate audio session category for playback.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Use the AVAudioPlayer interruption delegate methods to pause playback upon receiving an interruption, and to then resume playback if the interruption ends.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Demonstrates a technique to perform Fast Forward and Rewind&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;avTouch does not demonstrate how to play multiple files, nor does it demonstrate more advanced use of AV Foundation.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='batterystatus'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/BatteryStatus/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008812'&gt;BatteryStatus&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates the use of the battery status properties and notifications provided via the iOS SDK.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='bonjourweb'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/BonjourWeb/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007415'&gt;BonjourWeb&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This application illustrates the fundamentals of browsing for network services using Bonjour. The BonjourBrowser hierarchically displays Bonjour domains and services as table views in a navigation controller. The contents of the table views are discovered and updated dynamically using NSNetServiceBrowser objects. Tapping an item in the services table causes the corresponding NSNetService object to be resolved asynchronously. When that resolution completes, a delegate method is called which constructs a URL and opens it in Safari.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='breadcrumb'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/Breadcrumb/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010048'&gt;Breadcrumb&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates how to draw a path using the Map Kit overlay, MKOverlayView, that follows and tracks the user&amp;#8217;s current location. The included CrumbPath and CrumbPathView overlay and overlay view classes can be used for any path of points that are expected to change over time. It also demonstrates what is needed to track the user&amp;#8217;s location as a background process.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='bubblelevel'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/BubbleLevel/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007331'&gt;BubbleLevel&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The Bubble Level sample application demonstrates how to receive and interpret acceleration information, animate a view, and display a utility view (used for calibration).&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='copypastetile'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/CopyPasteTile/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009040'&gt;CopyPasteTile&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;CopyPasteTile demonstrates how to implement the copy-cut-paste feature introduced in iPhone OS 3.0. The sample:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Shows how to use the UIMenuController class to position and display the editing menu (the menu with the Copy, Cut, Paste, and other commands).&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Illustrates how you might implement the canPerformAction:withSender: method of UIResponder to validate the menu commands for the current context.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Shows how to respond when the user taps a menu command by reading and writing data to a pasteboard, (an instance of the UIPasteboard class).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h4 id='coredatabooks'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/CoreDataBooks/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008405'&gt;CoreDataBooks&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample illustrates a number of aspects of working with the Core Data framework with an iPhone application:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Use of an instance of NSFetchedResultsController object to manage a collection of objects to be displayed in a table view.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Undo and redo.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Database initialization.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Use of a second managed object context to isolate changes during an add operation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h4 id='coretelephonydemo'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/CoreTelephonyDemo/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010746'&gt;CoreTelephonyDemo&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample shows how to use Core Telephony framework to access the user&amp;#8217;s current calls, call center and carrier information.&lt;/p&gt;
+
+&lt;p&gt;The application uses a grouped table view with 3 sections, each section displaying one Core Telephony object.&lt;/p&gt;
+
+&lt;p&gt;The techniques shown in this sample are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;correct way of instantiating Core Telephony framework objects&lt;/li&gt;
+
+&lt;li&gt;using a block-based event handler to receive call events&lt;/li&gt;
+
+&lt;li&gt;access Core Telephony object properties&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h4 id='coretextpageviewer'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/CoreTextPageViewer/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010699'&gt;CoreTextPageViewer&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample shows how to use Core Text to display large bodies of text, text with mixed styles, and text with special style or layout requirements, such as use of custom fonts. A version of this sample was used in the &amp;#8220;Advanced Text Handling for iPhone OS&amp;#8221; WWDC 2010 Session.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='cryptoexercise'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/CryptoExercise/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008019'&gt;CryptoExercise&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample demonstrates the use of the two main Cryptographic API sets on the iPhone OS SDK. Asymmetric Key Encryption and random nonce generation is handled through the Security framework API set, whereas, Symmetric Key Encryption and Digest generation is handled by the CommonCrypto API set. The CryptoExercise sample brings both of these APIs together through a network service, discoverable via Bonjour, that performs a &amp;#8220;dummy&amp;#8221; cryptographic protocol between devices found on the same subnet.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='currentaddress'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/CurrentAddress/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009469'&gt;CurrentAddress&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates basic use of MapKit, displaying a map view and setting its region to current location.&lt;/p&gt;
+
+&lt;p&gt;It makes use of the MKReverseGeocoder class that provides services for converting your map coordinate (specified as a latitude/longitude pair) into information about that coordinate, such as the country, city, or street. A reverse geocoder object is a single-shot object that works with a network-based map service to look up placemark information for its specified coordinate value. To use placemark information is leverages the MKPlacemark class to store this information.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='datecell'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/DateCell/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008866'&gt;DateCell&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates formatted display of date objects in UITableViewCells and use of UIDatePicker to edit those values.&lt;/p&gt;
+
+&lt;p&gt;Using a grouped style UITableViewController, the sample has two UITableViewCells to draw the primary title and NSDate value. This is accomplished using the built-in cell type &amp;#8220;UITableViewCellStyleValue1&amp;#8221; which supports left and right text. In addition, this sample shows how to use NSDateFormatter class to achieve the custom cell&amp;#8217;s date-formatted appearance.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='datesectiontitles'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/DateSectionTitles/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009939'&gt;DateSectionTitles&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This application shows how to create section information for NSFetchedResultsController using dates.&lt;/p&gt;
+
+&lt;p&gt;A single table view controller displays events sorted by date and grouped into sections by year and month. The Event entity has three attributes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;timeStamp (persistent NSDate object).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The time stamp represents the time the event occurred.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;title (persistent NSString object).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The title of each event as it will be displayed on a row in the table view (this is not to be confused with section title). When the default data is created in the application delegate, the title is initialized to a string representation of the date.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;sectionIdentifier (transient NSString object).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The sectionIdentifier is used to divide the events into sections in the table view. It is a string value representing the number ((year * 1000) + month). Using this value, events can be correctly ordered chronologically regardless of the actual name of the month. It is calculated and cached on demand in the custom accessor method.&lt;/p&gt;
+
+&lt;p&gt;The sorting is all done at fetch time by the fetched results controller. The section name transformations are UI level and have no effect on the order of data.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='docinteraction'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/DocInteraction/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010052'&gt;DocInteraction&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates how to use UIDocumentInteractionController to obtain information about documents and how to preview them. There are two ways to preview documents: one is to use UIDocumentInteractionController&amp;#8217;s preview API, the other is directly use QLPreviewController. This sample also demonstrates the use of UIFileSharingEnabled feature so you can upload documents to the application using iTunes and then to preview them. With the help of &amp;#8220;kqueue&amp;#8221; kernel event notifications, the sample monitors the contents of the Documents folder.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='drilldownsave'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/DrillDownSave/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007800'&gt;DrillDownSave&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Demonstrates how to restore the user&amp;#8217;s current location in a drill-down list style user interface and restore that location when the app is relaunched. The drill-down or content hierarchy is generated from a plist file called &amp;#8216;outline.plist&amp;#8217;. The sample stores the user&amp;#8217;s location in its preferences file using NSUserDefaults.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='eademo'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/EADemo/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010079'&gt;EADemo&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;The sample can be used with any Made For iPod (MFI) device designed for use with the External Accessory Framework. The application will display an External Accessory attached device in the Accessories window, provide information registered by the MFI device, and provides methods to send and receive data to the device.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='externaldisplay'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/ExternalDisplay/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010724'&gt;ExternalDisplay&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;How to detect the presence of an external display, determine the available display resolutions, select a resolution, and show content on the display.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='fastenumerationsample'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/FastEnumerationSample/Introduction/Intro.html#//apple_ref/doc/uid/DTS40009411'&gt;FastEnumerationSample&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;A Mac OS X command line project that demonstrates how to implement the NSFastEnumeration protocol. In this sample the MyFastEnumerationSample class implements -countByEnumeratingWithState:objects:count: to return strings on demand. This sample avoids considering how you may implement a storage class, whereas a real implementation would likely need to do less work to provide values, such as directly copying object pointers from an internal representation. Regardless of your class&amp;#8217;s actual implementation, adopting the NSFastEnumeration protocol also allows you to use the for&amp;#8230;in syntax to access your containers objects.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='formulaic'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/Formulaic/Introduction/Intro.html#//apple_ref/doc/uid/DTS40008932'&gt;Formulaic&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Formulaic is a sample iPhone app that illustrates how to effectively use the iPhone Accessibility API. Using the Accessibility API allows your app to work correctly with VoiceOver.&lt;/p&gt;
+
+&lt;p&gt;The app draws a graph of a formula and allows the user to change certain constants in the formula, however its main purpose is to illustrate the iPhone Accessibility API.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='generickeychain'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/GenericKeychain/Introduction/Intro.html#//apple_ref/doc/uid/DTS40007797'&gt;GenericKeychain&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample shows how to add, query for, remove, and update a keychain item of generic class type. Also demonstrates the use of shared keychain items. All classes exhibit very similar behavior so the included examples will scale to the other classes of Keychain Item: Internet Password, Certificate, Key, and Identity.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='geocoderdemo'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/GeocoderDemo/Introduction/Intro.html#//apple_ref/doc/uid/DTS40011097'&gt;GeocoderDemo&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample application demonstrates using a CLGeocoder instance to perform forward and reverse geocoding on strings and dictionaries. The application also includes an example distance calculator that will display the distance between two placemarks.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4 id='popovers'&gt;&lt;a href='http://developer.apple.com/library/ios/#samplecode/Popovers/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010436'&gt;Popovers&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;This sample demonstrates proper use of UIPopoverController in iOS. UIPopoverController presentation, dismissing, and rotation handling are covered. The sample is provided using a UISplitViewController in order to show proper handling of UIPopoverControllers being presented from UIBarButtonItems. Additional handling ensures that multiple UIPopoverControllers are never presented at the same time.&lt;/p&gt;
+&lt;hr /&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>学习Markdown</title>
    <link href="http://ilingaohe.github.com/learn-markdown"/>
    <updated>2012-03-19T00:00:00+08:00</updated>
    <id>hhttp://ilingaohe.github.com/learn-markdown</id>
-   <content type="html">&lt;h2 id='id1325'&gt;学习目的&lt;/h2&gt;
+   <content type="html">&lt;h2 id='id333'&gt;学习目的&lt;/h2&gt;
 
 &lt;p&gt;markdown语法使用的学习与提高&lt;/p&gt;
 
-&lt;h2 id='id1326'&gt;学习工具&lt;/h2&gt;
+&lt;h2 id='id334'&gt;学习工具&lt;/h2&gt;
 
 &lt;p&gt;markdown是纯文本，所以可以使用任何的文本编辑器，不过为了提高编辑的效率，建议使用一款markdwon的编辑器，Mac OS X下我使用的是&lt;a href='http://mouapp.com/'&gt;Mou&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src='http://mouapp.com/images/Mou_Screenshot_1.png' alt='Mou_Screenshot' /&gt;&lt;/p&gt;
 
-&lt;h2 id='id1327'&gt;语法学习&lt;/h2&gt;
+&lt;h2 id='id335'&gt;语法学习&lt;/h2&gt;
 
 &lt;p&gt;以下内容，主要根据Mou的帮助文档整理，以后根据实际用到的经验，陆续添加更新。&lt;/p&gt;
 
-&lt;h3 id='id1328'&gt;强调&lt;/h3&gt;
+&lt;h3 id='id336'&gt;强调&lt;/h3&gt;
 
 &lt;p&gt;使用两个&lt;code&gt;**&lt;/code&gt;或者两个&lt;code&gt;__&lt;/code&gt;包围内容表示加粗强调 使用一个&lt;code&gt;*&lt;/code&gt;或者一个&lt;code&gt;_&lt;/code&gt;包围内容表示倾斜强调&lt;/p&gt;
 
@@ -46,7 +341,7 @@ __倾斜强调__
 并且里面的_内容_这两个字进行倾斜
 **&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1329'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id337'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;&lt;strong&gt;加粗强调&lt;/strong&gt;&lt;/p&gt;
 
@@ -54,7 +349,7 @@ __倾斜强调__
 
 &lt;p&gt;&lt;strong&gt;也可以嵌套使用，比如整个加粗， 并且里面的_内容_这两个字进行倾斜&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id='id1330'&gt;块引用&lt;/h3&gt;
+&lt;h3 id='id338'&gt;块引用&lt;/h3&gt;
 
 &lt;p&gt;内容以右角尖括号&amp;gt;开始的话则显示的是进行整块的引用&lt;/p&gt;
 
@@ -62,13 +357,13 @@ __倾斜强调__
 
 &lt;pre&gt;&lt;code&gt;内容以右角尖括号&amp;gt;开始的话则显示的是进行整块的引用&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1331'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id339'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;内容以右角尖括号&amp;gt;开始的话则显示的是进行整块的引用&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id='id1332'&gt;链接与邮箱&lt;/h3&gt;
+&lt;h3 id='id340'&gt;链接与邮箱&lt;/h3&gt;
 
 &lt;p&gt;邮箱只要用&lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt;括起来就可以&lt;/p&gt;
 
@@ -76,7 +371,7 @@ __倾斜强调__
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;ilingaohe@gmail.com&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1333'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id341'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href='mailto:ilingaohe@gmail.com'&gt;&amp;#105;&amp;#108;&amp;#105;&amp;#110;&amp;#103;&amp;#097;&amp;#111;&amp;#104;&amp;#101;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/p&gt;
 
@@ -100,7 +395,7 @@ __倾斜强调__
 4.[我的博客][id]
   [id]:http://ilingaohe.github.com &amp;quot;ilingaohe的博客&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1334'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id342'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;ol&gt;
 &lt;li&gt;
@@ -120,7 +415,7 @@ __倾斜强调__
 &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id='id1335'&gt;图片添加&lt;/h3&gt;
+&lt;h3 id='id343'&gt;图片添加&lt;/h3&gt;
 
 &lt;p&gt;和文字链接类似，图片添加也有两种方式:&lt;/p&gt;
 
@@ -136,7 +431,7 @@ __倾斜强调__
 2.![Mou icon][id_2]
    [id_2]: http://mouapp.com/Mou_128.png &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1336'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id344'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;ol&gt;
 &lt;li&gt;
@@ -148,7 +443,7 @@ __倾斜强调__
 &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id='id1337'&gt;行内代码及代码块&lt;/h3&gt;
+&lt;h3 id='id345'&gt;行内代码及代码块&lt;/h3&gt;
 
 &lt;p&gt;行内代码标注和代码块前面我们已经有用到了，行内代码的话用&lt;code&gt;(Esc按键下面那个)符号包围，代码块的话每行使用1个Tab或者4个空格。&lt;/code&gt;&lt;/p&gt;
 
@@ -160,7 +455,7 @@ __倾斜强调__
 NSString *name = @&amp;quot;ilingaohe&amp;quot;;
 NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1338'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id346'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;行内代码的例子，&lt;code&gt;NSString *name = @&amp;quot;ilingaohe&amp;quot;;&lt;/code&gt;&lt;/p&gt;
 
@@ -170,7 +465,7 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 NSString *name = @&amp;quot;ilingaohe&amp;quot;;
 NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id='id1339'&gt;列表&lt;/h3&gt;
+&lt;h3 id='id347'&gt;列表&lt;/h3&gt;
 
 &lt;p&gt;有序列表使用类似&amp;#8221;1.&amp;#8221;+空格的方式 无序列表使用类似&amp;#8221;&lt;em&gt;&amp;#8220;或者&amp;#8221;-&amp;#8220;+空格的方式&lt;/em&gt;&lt;/p&gt;
 
@@ -190,7 +485,7 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 - Ruby
 - Javascript &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1340'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id348'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;有序列表&lt;/p&gt;
 
@@ -224,7 +519,7 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='id1341'&gt;换行&lt;/h3&gt;
+&lt;h3 id='id349'&gt;换行&lt;/h3&gt;
 
 &lt;p&gt;在一行的结尾添加大于等于两个的空格才可以实际换行&lt;/p&gt;
 
@@ -233,11 +528,11 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;第一行（后面还添加了两个空格）  
 第二行&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1342'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id350'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;第一行（后面还添加了两个空格）&lt;br /&gt;第二行&lt;/p&gt;
 
-&lt;h3 id='id1343'&gt;水平线&lt;/h3&gt;
+&lt;h3 id='id351'&gt;水平线&lt;/h3&gt;
 
 &lt;p&gt;使用3个及以上的星号及虚线能够产生一条水平线&lt;/p&gt;
 
@@ -247,9 +542,9 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 ---  
 - - - &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1344'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id352'&gt;实际显示效果&lt;/h4&gt;
 &lt;hr /&gt;&lt;hr /&gt;&lt;hr /&gt;
-&lt;h3 id='id1345'&gt;标题&lt;/h3&gt;
+&lt;h3 id='id353'&gt;标题&lt;/h3&gt;
 
 &lt;p&gt;标题有两种类型风格，Setext风格和atx风格&lt;/p&gt;
 
@@ -269,7 +564,7 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 #####标题5  
 ######标题6 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1346'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id354'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;//Setext风格&lt;/p&gt;
 
@@ -291,7 +586,7 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h6 id='6'&gt;标题6&lt;/h6&gt;
 
-&lt;h3 id='id1347'&gt;错误更正&lt;/h3&gt;
+&lt;h3 id='id355'&gt;错误更正&lt;/h3&gt;
 
 &lt;p&gt;使用两个&lt;code&gt;~~&lt;/code&gt;(都是Esc下面的按键)波浪号可以显示错误更正的效果&lt;/p&gt;
 
@@ -299,11 +594,11 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;~~错误内容~~&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1348'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id356'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;~~错误内容~~&lt;/p&gt;
 
-&lt;h3 id='id1349'&gt;包围代码快&lt;/h3&gt;
+&lt;h3 id='id357'&gt;包围代码快&lt;/h3&gt;
 
 &lt;p&gt;以三个及以上的反引号&lt;code&gt; &lt;/code&gt;&lt;code&gt; &lt;/code&gt;（还是Esc下面的按键）开始一行，并且在结尾的时候使用和开头一样多的反引号作为结尾行，可以包围一个代码块&lt;/p&gt;
 
@@ -315,15 +610,15 @@ NSLog(@&amp;quot;Name:%@&amp;quot;,name);&lt;/code&gt;&lt;/pre&gt;
 代码块结尾部分
 ```&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1350'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id358'&gt;实际显示效果&lt;/h4&gt;
 
 &lt;p&gt;&lt;code&gt; 
-代码块开始部分  
-代码块正文部分  
-代码块结尾部分    
+代码块开始部分
+代码块正文部分
+代码块结尾部分
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id='id1351'&gt;表格&lt;/h3&gt;
+&lt;h3 id='id359'&gt;表格&lt;/h3&gt;
 
 &lt;p&gt;表格使用虚线进行划分，并且可以使用冒号&lt;code&gt;:&lt;/code&gt;进行表格内容的对齐&lt;/p&gt;
 
@@ -347,7 +642,7 @@ First Header | Second Header | Third Header
 Left         | Center        | Right
 Left         | Center        | Right&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id1352'&gt;实际显示效果&lt;/h4&gt;
+&lt;h4 id='id360'&gt;实际显示效果&lt;/h4&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;First Header&lt;/th&gt;&lt;th&gt;Second Header&lt;/th&gt;&lt;th&gt;Third Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;
 &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;First Header&lt;/th&gt;&lt;th&gt;Second Header&lt;/th&gt;&lt;th&gt;Third Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;&lt;td style='text-align: left;'&gt;Content Cell&lt;/td&gt;
@@ -355,7 +650,7 @@ Left         | Center        | Right&lt;/code&gt;&lt;/pre&gt;
 &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;First Header&lt;/th&gt;&lt;th&gt;Second Header&lt;/th&gt;&lt;th&gt;Third Header&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Left&lt;/td&gt;&lt;td style='text-align: center;'&gt;Center&lt;/td&gt;&lt;td style='text-align: right;'&gt;Right&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;Left&lt;/td&gt;&lt;td style='text-align: center;'&gt;Center&lt;/td&gt;&lt;td style='text-align: right;'&gt;Right&lt;/td&gt;
 &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
-&lt;h2 id='id1353'&gt;其他资料&lt;/h2&gt;
+&lt;h2 id='id361'&gt;其他资料&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href='http://wowubuntu.com/markdown/'&gt;Markdown 语法说明 (简体中文版)&lt;/a&gt;&lt;/li&gt;
@@ -373,11 +668,11 @@ Left         | Center        | Right&lt;/code&gt;&lt;/pre&gt;
    <link href="http://ilingaohe.github.com/first-blog"/>
    <updated>2012-03-18T00:00:00+08:00</updated>
    <id>hhttp://ilingaohe.github.com/first-blog</id>
-   <content type="html">&lt;h2 id='id1323'&gt;博客开言&lt;/h2&gt;
+   <content type="html">&lt;h2 id='id331'&gt;博客开言&lt;/h2&gt;
 
 &lt;p&gt;我是一只菜菜菜鸟，正在努力起起起飞！&lt;/p&gt;
 
-&lt;h2 id='id1324'&gt;博客目的&lt;/h2&gt;
+&lt;h2 id='id332'&gt;博客目的&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;

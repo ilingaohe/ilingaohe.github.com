@@ -6,5 +6,6 @@ http://ilingaohe.github.com/index.html
 http://ilingaohe.github.com/sitemap.txt
 http://ilingaohe.github.com/tags.html
 
+http://ilingaohe.github.com/apple-ios-sample-code-collection
 http://ilingaohe.github.com/learn-markdown
 http://ilingaohe.github.com/first-blog
