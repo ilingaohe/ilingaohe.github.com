@@ -325,8 +325,6 @@ This sample demonstrates proper use of UIPopoverController in iOS. UIPopoverCont
 ----
 
 ## 其他资料
-1. [Apple Sample Code for iPhone and iPad (a - o)](http://iphoneworxx.com/sample-code-ios-iphone-and-ipad)
-2. [Apple Sample Code for iPhone and iPad (p - z)](http://iphoneworxx.com/apple-sample-code-iphone-and-ipad-p-z)
-3. [Collection of Open Source Apps and Sample Code](http://www.ifans.com/forums/threads/collection-of-open-source-apps-and-sample-code.147476/)
+1. [Collection of Open Source Apps and Sample Code](http://www.ifans.com/forums/threads/collection-of-open-source-apps-and-sample-code.147476/)
 
 
