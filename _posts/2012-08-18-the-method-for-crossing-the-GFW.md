@@ -50,6 +50,7 @@ tags: [GFW]
 最后在快捷下拉菜单中选择Global Mode代理模式，并且Default Proxy项选择GoAgent，就可以使用了。
 
 FireFox中也可以选择使用[FoxyProxy](https://addons.mozilla.org/zh-cn/firefox/addon/foxyproxy-standard/)代理管理插件。
+
 ##### 使用和体验
 这样安装和配置就好了，下次要使用GoAgent来翻墙的时候，先打开终端，切换到GoAgent的local目录下，使用`python proxy.py`命令打开代理，同时在Chrome浏览器中SwitchSharp插件里选择GoAgent选项，然后就可以输入[www.facebook.com](www.facebook.com)进行浏览Facebook了。
 
