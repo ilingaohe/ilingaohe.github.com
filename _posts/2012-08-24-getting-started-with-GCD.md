@@ -71,7 +71,9 @@ One of the technologies for starting tasks asynchronously is Grand Central Dispa
 GCD会维护一个分发队列，使用先进先出的方式管理添加进来需要执行的任务。
 队列有两种类型，串行队列和并行队列：
 
+![GCD任务分发队列](https://raw.github.com/ilingaohe/ilingaohe.github.com/master/_posts/images/2012-08-24-01.png)
 
+图-1 串行任务分发队列和并行队列
 
 串行队列的特点是一个一个执行任务，只有当前一个任务执行完了，才会执行下一个任务。
 而并行队列会一次同时执行多个任务（一次执行任务的个数由系统根据当前可以调配的系统空闲资源来确定）。
