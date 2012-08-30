@@ -71,14 +71,16 @@ One of the technologies for starting tasks asynchronously is Grand Central Dispa
 GCD会维护一个分发队列，使用先进先出的方式管理添加进来需要执行的任务。
 队列有两种类型，串行队列和并行队列：
 
-![GCD任务分发队列](2012-08-24/2012-08-24-01.png)
+![GCD任务分发队列](images/2012-08-24-01.png)
+
 图-1 串行任务分发队列和并行队列
 
 串行队列的特点是一个一个执行任务，只有当前一个任务执行完了，才会执行下一个任务。
 而并行队列会一次同时执行多个任务（一次执行任务的个数由系统根据当前可以调配的系统空闲资源来确定）。
 即串行队列只会创建一个线程，而并行队列会创建多个线程：
 
-![串并行队列与创建的线程数量关系](2012-08-24/2012-08-24-02.png)
+![串并行队列与创建的线程数量关系](images/2012-08-24-02.png)
+
 图-2 串并行队列与创建的线程数量关系
 
 下面介绍一下如何获取或者创建一个GCD的分发队列。
@@ -170,7 +172,8 @@ Global Dispatch Queue是分别为DISPATCH_QUEUE_PRIORITY_HEIGH,DISPATCH_QUEUE_PR
 	
 以上代码表示在并行读完`blk0_for_reading`,`blk1_for_reading`之后，需要先串行执行`blk0_for_writing`,之后等这个任务执行完成之后，才可以继续并行执行下面的任务。
 用图来表示`dispatch_barrier_async`的执行顺序关系为：
-![dispatch_barrier_async的执行顺序](2012-08-24/2012-08-24-03.png)
+![dispatch_barrier_async的执行顺序](images/2012-08-24-03.png)
+
 图-3 dispatch_barrier_aysnc的执行顺序
 
 注意点：`dispatch_barrier_async`的第一个参数queue必须是一个自己使用dispatch_queue_creat创建的并行dispatch队列，如果是一个串行队列或者是系统global的并行队列，那这个函数等效于`dispatch_aysnc`，会立即返回。
