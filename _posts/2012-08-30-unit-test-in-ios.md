@@ -94,32 +94,32 @@ Test的方法的写法为：
 
 1.第一种是删除自动产生的Delegate文件，并且到`Supporting Files`下的`main.m`文件中修改为:
 
-	#import <UIKit/UIKit.h>
-	int main(int argc, char *argv[])
-	{
-		@autoreleasepool {
-    		return UIApplicationMain(argc, argv, nil, 			@"GHUnitIOSAppDelegate"));
+		#import <UIKit/UIKit.h>
+		int main(int argc, char *argv[])
+		{
+			@autoreleasepool {
+    			return UIApplicationMain(argc, argv, nil, 				@"GHUnitIOSAppDelegate"));
+    		}
     	}
-    }
 
 表示直接使用了GHUnit提供的GHUnitIOSAppDelegate。如果需要在Delegate中进行一些设置，则可以自己创建一个继承自GHUnitIOSAppDelegate的自定义Delegate。即为下面的第二种方式。
 
 2.第二种方式为不删除Delegate文件，但是需要修改为继承GHUnitIOSAppDelegate，比如修改后的Delegate文件为：
 
-	//AppDelegate.h文件
-	#import <UIKit/UIKit.h>
-	#import <GHUnitIOS/GHUnit.h>
-	@interface AppDelegate : GHUnitIOSAppDelegate
-	@end
+		//AppDelegate.h文件
+		#import <UIKit/UIKit.h>
+		#import <GHUnitIOS/GHUnit.h>
+		@interface AppDelegate : GHUnitIOSAppDelegate
+		@end
 
-	//AppDelegate.m文件
-	#import "AppDelegate.h"
-	@implementation AppDelegate
-	- (void)dealloc
-	{
-    	[super dealloc];
-	}
-	@end
+		//AppDelegate.m文件
+		#import "AppDelegate.h"
+		@implementation AppDelegate
+		- (void)dealloc
+		{
+    		[super dealloc];
+		}
+		@end
 
 然后就可以在AppDelegate中添加其他需要在启动的时候先做的事情了。
 
