@@ -21,7 +21,7 @@ tags: [iOS]
 iOS在提供ARC（Automatic Reference Counting）之前，使用的引用计数的内存管理方式。
 为了理解引用计数的概率，作者以一个房间中灯泡的开关为例进行了很到位的讲解。
 
-![使用房间的灯泡开关来比较引用计数方式的内存管理](https://raw.github.com/ilingaohe/ilingaohe.github.com/master/_posts/images/2012-08-17-01.png)
+![使用房间的灯泡开关来比较引用计数方式的内存管理](https://raw.github.com/ilingaohe/ilingaohe.github.com/master/resources/images/2012-08-17-01.png)
 
 图-1 使用房间的灯泡开关来比较引用计数方式的内存管理
 

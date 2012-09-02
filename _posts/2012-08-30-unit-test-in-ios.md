@@ -33,20 +33,20 @@ XCode开发环境中自带了单元测试框架，有两种方式在程序中使
 
 然后就可以测试编写测试方法了，比如主程序中有个`printHelloWorld()`方法在`UnitTestCode`文件中需要测试：
 
-	//UnitTestCode.h文件
-	#import <Foundation/Foundation.h>
-	@interface UnitTestCode : NSObject
-	- (void)printHelloWorld;
-	@end
+		//UnitTestCode.h文件
+		#import <Foundation/Foundation.h>
+		@interface UnitTestCode : NSObject
+		- (void)printHelloWorld;
+		@end
 	
-	//UnitTestCode.m文件
-	#import "UnitTestCode.h"
-	@implementation UnitTestCode
-	- (void)printHelloWorld
-	{
-		NSLog(@"Hello World");
-	}
-	@end
+		//UnitTestCode.m文件
+		#import "UnitTestCode.h"
+		@implementation UnitTestCode
+		- (void)printHelloWorld
+		{
+			NSLog(@"Hello World");
+		}
+		@end
 
 ##### 编写测试代码 
 在Test文件中包含需要测试的主程序代码对应的头文件，比如这里的`UnitTestCode.h`，然后写一个以`test`开头的测试方法，比如：
