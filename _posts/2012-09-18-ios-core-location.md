@@ -2,7 +2,7 @@
 layout: post
 title: "iOS Core Location学习"
 category: 学习笔记
-tags: [iOS][Core Location]
+tags: [iOS Core Location]
 ---
 {% include JB/setup %}
 
