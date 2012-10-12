@@ -95,6 +95,16 @@ Git在commit的时候需要提交者的信息，因此需要配置帐号信息�
 	git commit -m "commit message"   //提交所有的修改
 	git commit -am "commit message"  //相当于先git add .,再git commit
 	 
+	 
+### Submodule的获取
+
+有些Git代码库可能还包含子Git代码库，这些子Git代码库就叫做Submodule，获取代码库中的Submodule的命令为：
+
+	git submodule init
+	git submodule update
+	
+	
+	 
 ## 其他资料
 1. [Git Tutorial](http://www.ralfebert.de/tutorials/git/)[从安装到Git的各个命令，讲解的顺序比较好]
 2. [Git Immersion](http://gitimmersion.com/index.html)[让你边学习变操作的方式来了解Git的基本使用]
