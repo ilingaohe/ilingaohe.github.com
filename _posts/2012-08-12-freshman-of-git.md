@@ -103,7 +103,11 @@ Git在commit的时候需要提交者的信息，因此需要配置帐号信息�
 	git submodule init
 	git submodule update
 	
-	
+开始使用Git Submodule添加和删除时可能会碰到些许问题，	可以查看以下两个链接：
+
+[删除git submodule](http://www.worldhello.net/2010/01/26/425.html)
+
+[Add untracked submodle](http://stackoverflow.com/questions/4161022/git-how-to-track-untracked-content/4162672#4162672)
 	 
 ## 其他资料
 1. [Git Tutorial](http://www.ralfebert.de/tutorials/git/)[从安装到Git的各个命令，讲解的顺序比较好]
