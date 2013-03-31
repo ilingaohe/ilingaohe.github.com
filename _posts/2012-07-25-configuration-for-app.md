@@ -9,4 +9,4 @@ tags: [App]
 ## 第一个配置
 EarthquakeWatchAppEnable:YES
 
-FailedPercent:99
+FailedPercent:00
