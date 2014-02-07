@@ -107,6 +107,13 @@ Git在commit的时候需要提交者的信息，因此需要配置帐号信息�
 
 [删除git submodule](http://www.worldhello.net/2010/01/26/425.html)
 
+删除一个submodule的命令:
+
+git rm --cached path/to/submodule
+
+注意：目录最后面不要带/
+
+
 [Add untracked submodle](http://stackoverflow.com/questions/4161022/git-how-to-track-untracked-content/4162672#4162672)
 	 
 ## 其他资料
